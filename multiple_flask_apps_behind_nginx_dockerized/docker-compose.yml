@@ -1,0 +1,23 @@
+nginx2:
+  restart: always
+  build: "./nginx"
+  ports:
+    - "80:80"
+  links:
+    - "app1"
+    - "app2"
+
+app1:
+  build: "./app1"
+  expose:
+    - "5000"
+  command: "python app1.py"
+
+
+app2:
+  build: "./app2"
+  expose: 
+    - "5000"
+  command: "python app2.py"
+
+  
