@@ -2,6 +2,7 @@
 - Remember to edit Nginx redirects to match names in docker-compose
 
 ```bash
+docker-compose up --build
 curl http://localhost://app1/hello
 Hello from app1
 curl http://localhost://app2/hello
