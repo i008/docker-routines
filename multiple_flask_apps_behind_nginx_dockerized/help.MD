@@ -1,2 +1,0 @@
-- Use 0.0.0.0 as host-ip in flask
-- Remember to edit Nginx redirects to match names in docker-compose
