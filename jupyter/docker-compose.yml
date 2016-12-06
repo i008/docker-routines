@@ -1,0 +1,7 @@
+mynotebook:
+  build: '.'
+  command: jupyter notebook --ip 0.0.0.0 --port 7777
+  ports:
+    - '7777:7777'
+  volumes:
+    - '.:/opt/i008/'
